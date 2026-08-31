@@ -1,0 +1,74 @@
+
+
+synthetic_data:
+ 
+  n_accounts: 5000
+
+ 
+  simulation_weeks: 52
+
+  random_seed: 42
+
+  at_risk_fraction: 0.20
+
+ 
+  baseline_logins_lognormal_mean: 1.8   
+  baseline_logins_lognormal_sigma: 0.5
+
+ 
+  baseline_feature_events_lognormal_mean: 1.4
+  baseline_feature_events_lognormal_sigma: 0.6
+
+ 
+  support_ticket_poisson_lambda_healthy: 0.05
+
+
+  support_ticket_risk_multiplier: 4.0
+
+  decay_rate_lognormal_mean: -3.2   
+  decay_rate_lognormal_sigma: 0.4
+
+
+  cancellation_engagement_threshold: 0.25
+
+cleaning:
+  
+  drop_negative_counts: true
+
+
+  min_weeks_per_account: 2
+
+feature_engineering:
+  
+  recent_window_weeks: 4
+
+  
+  prior_window_weeks: 4
+
+segmentation:
+  n_clusters: 4
+  random_state: 42
+  n_init: 10
+  clustering_features:
+    - "login_trend_pct"
+    - "support_tickets_last_4w"
+    - "avg_logins_last_4w"
+    - "tenure_weeks"
+
+scoring:
+  test_size: 0.2
+  random_state: 42
+  n_estimators: 200
+  max_depth: 8
+
+recommendations:
+ 
+  high_risk_threshold: 65
+ 
+  medium_risk_threshold: 35
+
+app:
+  data_mode_default: "demo"
+
+  demo_max_rows: 2000
+  demo_csv_path: "data/demo_sample.csv"
