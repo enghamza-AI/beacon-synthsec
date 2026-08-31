@@ -1,7 +1,7 @@
 # Beacon — Subscription Health Monitor
 
 [![HF Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/enghamza-AI/beacon)
-[![GitHub](https://img.shields.io/badge/GitHub-repo-181717?logo=github)](https://github.com/enghamza-AI/beacon-subscription-health)
+[![GitHub](https://img.shields.io/badge/GitHub-repo-181717?logo=github)](https://github.com/enghamza-AI/beacon-synthsec)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue?logo=python)](https://www.python.org/)
 [![Dataset](https://img.shields.io/badge/dataset-synthetic-orange)](#dataset)
 
@@ -91,8 +91,8 @@ beacon/
 ## Quickstart
 
 ```bash
-git clone https://github.com/enghamza-AI/beacon-subscription-health.git
-cd beacon-subscription-health
+git clone https://github.com/enghamza-AI/beacon-synthsec.git
+cd beacon-synthsec
 pip install -r requirements.txt
 python -m scripts.generate_demo_data
 streamlit run app.py
