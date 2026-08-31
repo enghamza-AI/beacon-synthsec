@@ -1,6 +1,6 @@
 # Beacon — Subscription Health Monitor
 
-[![HF Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/enghamza-AI/beacon-subscription-health)
+[![HF Space](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Space-blue)](https://huggingface.co/spaces/enghamza-AI/beacon)
 [![GitHub](https://img.shields.io/badge/GitHub-repo-181717?logo=github)](https://github.com/enghamza-AI/beacon-subscription-health)
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue?logo=python)](https://www.python.org/)
 [![Dataset](https://img.shields.io/badge/dataset-synthetic-orange)](#dataset)
